@@ -1,0 +1,133 @@
+#vertical-multilevel-menu {
+    padding-left: 40px;
+    margin-bottom: 1rem;
+	/* background: aqua; */
+}
+
+.map-level-btn {
+    background: transparent;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 6px;
+    border: none;
+}
+
+.vertical-multilevel-menu-level-1 img {
+    position: relative;
+    top: -7px;
+    left: -1px;
+}
+
+.visible-none-svg {
+	display:none;
+}
+
+#vertical-multilevel-menu li {
+	text-transform: uppercase;
+}
+
+a.root-item {
+    text-transform: capitalize;
+}
+
+#vertical-multilevel-menu {
+    list-style: none;
+	font-size:17px;	
+	position: relative;
+}
+
+#vertical-multilevel-menu li {
+    list-style: none;
+	padding-left: 40px;	
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* полоски и точки */
+/* 3 уровень */
+.vertical-multilevel-menu-level-ul-3 { 
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+    border-width: 2px;
+    margin-left: 7px; 
+	/* background: red;	 */
+}
+
+.vertical-multilevel-menu-level-ul-3 li::after {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 36px;
+    background-color: #de141400;
+    position: absolute;
+    left: 127px;
+    margin-top: -47px;
+    border-bottom: 2px solid #000;
+}
+
+.vertical-multilevel-menu-level-ul-3 li::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #252525;
+    position: absolute;
+    left: 153px;
+    border-radius: 50%;
+    margin-top: 9px;
+}
+
+/* второй уровень */
+.vertical-multilevel-menu-level-li-3::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #252525;
+    position: absolute;
+	left: 102px;
+    border-radius: 50%;
+    margin-top: 9px;
+}
+
+/* для телефонов */
+@media (max-width: 767px) {
+  /* стили для xs-устройств */
+ #vertical-multilevel-menu {
+	 padding-left: 0px;
+}
+
+#vertical-multilevel-menu li { 
+    padding-left: 0px;
+}
+
+.vertical-multilevel-menu-level-ul-3 li::after {
+ content: none;
+}
+
+.vertical-multilevel-menu-level-ul-3 li::before {
+content: none;
+}
+
+.vertical-multilevel-menu-level-li-3::before {
+content: none;
+}
+
+.vertical-multilevel-menu-level-ul-3 {
+	padding-left: 15px;
+}
+
+#vertical-multilevel-menu {
+	font-size:14px;	
+}
+
+.vertical-multilevel-menu-level-ul-2 {
+    padding-left: 20px;
+}
+
+.vertical-multilevel-menu-level-ul-3 { 
+    border-color: transparent transparent transparent transparent;	
+}
+  
+}
