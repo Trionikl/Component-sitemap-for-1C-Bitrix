@@ -10,6 +10,7 @@
 
 ![alt text](screenshots/component.png "Компонент карта сайта")  
 
+Внешний вид карты сайта  
 ![alt text](screenshots/site-map.png "Внешний вид карты сайта")  
 
 
